@@ -1,0 +1,10 @@
+.ticket-container{
+    color:#212529;
+padding: 1%;
+}
+.title{
+    padding:5rem 0rem 1.5rem;
+    font-weight: 600;
+    font-size: x-large;
+    text-transform: uppercase;
+}

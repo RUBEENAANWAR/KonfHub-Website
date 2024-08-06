@@ -1,0 +1,18 @@
+.title{
+    padding:3rem 0rem 1.5rem;
+    color:#000;
+    font-weight: 600;
+    font-size: x-large;
+}
+.description{
+    /* background-color: green; */
+    line-height: 1.8;
+    font-family: "Manrope";
+
+}
+.image-container{
+    width:100%;
+}
+.pictures{
+    width:35%;
+}

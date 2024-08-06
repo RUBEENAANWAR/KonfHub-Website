@@ -1,0 +1,18 @@
+.ticket-container{
+    color:#212529;
+padding: 1%;
+}
+.title{
+    padding:5rem 0rem 1.5rem;
+    font-weight: 600;
+    font-size: x-large;
+}
+.container{
+    width: 70%;
+    background-color: #f6f6f5;
+    align-items: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 4px;
+}

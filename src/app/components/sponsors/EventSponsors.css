@@ -1,0 +1,12 @@
+.image-style{
+border: 1px solid #bbb;
+width:25%;
+height:15%;
+border-radius: 10px;
+margin:1.75% 0%;
+}
+.line{
+    width: 1px; 
+    background-color:#bbb ;
+    /* margin: auto 0;   */
+  }
