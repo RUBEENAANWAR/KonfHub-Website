@@ -4,7 +4,7 @@ import CustomButton from "../button/ButtonComponent";
 const CheckOut = () => {
   return (
     <div style={styles.chckoutContainer}>
-        <div style={{backgroundColor:'#fff',margin:'0% 2%',borderRadius:'5px',padding:'4% 4% 0%'}}>
+        <div style={{backgroundColor:'#fff',margin:'2% 2% 3%',borderRadius:'5px',padding:'2% 4% .5%'}}>
       <h3>Ticket Summary</h3>
       <h4>Paid Ticket </h4>
       <h4>Sub Total</h4>
