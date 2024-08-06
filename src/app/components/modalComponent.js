@@ -10,7 +10,6 @@ const Modal = ({ isOpen, onClose, details }) => {
         <h2>{details.title}</h2>
         <p>{details.subTitle}</p>
         <p>{details.address}</p>
-        {/* Add more details as needed */}
       </div>
     </div>
   );

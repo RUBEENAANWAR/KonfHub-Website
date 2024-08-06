@@ -2,23 +2,14 @@ import React,{useState} from 'react';
 import CustomButton from '../button/ButtonComponent';
 
 const CardComponent = ({ imageSrc, title, date, time, iconSrc, iconSrc2,onButtonClick }) => {
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalDetails, setModalDetails] = useState({});
-
-  const handleButtonClick = (details) => {
-    setModalDetails(details);
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div style={styles.cardContainer}>
+      <div style={styles.imageContainer}>
       <img src={imageSrc} alt="Card Image" style={styles.image} />
+      </div>
+      <div style={styles.titleContainer}>
       <h3 style={styles.title}>{title}</h3>
+      </div>
       <div style={styles.dateTime}>
         <span>{date}</span>
         <span>{time}</span>
@@ -39,7 +30,7 @@ const CardComponent = ({ imageSrc, title, date, time, iconSrc, iconSrc2,onButton
             color="white"
               backgroundColor="#000"
               text={"View Details"}
-              onClick={handleButtonClick}
+              // onClick={handleButtonClick}
             />
       </div>
     </div>
@@ -51,14 +42,20 @@ const styles = {
     border: '1px solid #ccc',
     borderRadius: '8px',
     padding: '16px',
-    textAlign: 'center',
+    // textAlign: 'center',
     maxWidth: '300px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    height:'auto'
   },
   image: {
     width: '100%',
     height: 'auto',
     borderRadius: '4px',
+  },
+  imageContainer:{
+    width:'300px',
+    height:'120px',
+    padding:'0% 0% 14% 0%'
   },
   bothImage:{
     position: 'relative',
@@ -78,6 +75,9 @@ const styles = {
     fontWeight: 'bold',
     margin: '12px 0',
     textAlign:'left'
+  },
+  titleContainer:{
+height:'15%'
   },
   dateTime: {
     fontSize: '14px',
