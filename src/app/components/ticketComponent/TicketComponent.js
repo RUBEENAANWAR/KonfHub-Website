@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import CustomButton from "../button/ButtonComponent";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from "react-redux";
 
 const TicketComponent = ({
   ticketHeading,
@@ -13,6 +14,11 @@ const TicketComponent = ({
 }) => {
 
   const navigate = useNavigate();
+  const data = useSelector((state) => state.data.data);
+  const error = useSelector((state) => state.data.error);
+  const loading = useSelector((state) => state.data.loading);
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>{error}</div>;
 
   function handleClick(){
     navigate('/register');

@@ -1,0 +1,65 @@
+.register-container {
+    /* background-color: red; */
+    width: '100%'
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(246, 246, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #bbb;
+}
+
+.title-container {
+    display: flex;
+    gap: 40px;
+    justify-content: baseline;
+    align-items: center;
+    color: #212529
+}
+
+.date-container {}
+
+.tckt-container {
+    width: 100%;
+    border: 2px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    padding: 1%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #212529;
+    font-weight: 300;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    /* Adjust color as needed */
+    font-size: 20px;
+    /* Adjust icon size as needed */
+    pointer-events: none;
+    /* Ensure the icon doesn't block clicks */
+}
