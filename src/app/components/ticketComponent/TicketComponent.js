@@ -3,6 +3,7 @@ import "./TicketComponent.css";
 import { FaLocationDot } from "react-icons/fa6";
 import CustomButton from "../button/ButtonComponent";
 import { FaIndianRupeeSign } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 
 const TicketComponent = ({
   ticketHeading,
@@ -10,6 +11,12 @@ const TicketComponent = ({
   category,
   ticketType,
 }) => {
+
+  const navigate = useNavigate();
+
+  function handleClick(){
+    navigate('/register');
+  }
   return (
     <div className="container-tckt-container">
       <h3>{ticketHeading}</h3>
@@ -54,7 +61,7 @@ const TicketComponent = ({
               //   color="white"
               backgroundColor="#000"
               text={ticketType==='donation ticket' ? "Donate" : "Register"}
-              // onClick={handleClick}
+              onClick={handleClick}
             />
           </div>
         </div>

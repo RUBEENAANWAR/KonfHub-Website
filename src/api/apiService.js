@@ -6,7 +6,6 @@ export const fetchData = async () => {
   try {
     store.dispatch(setLoading(true))
     const response = await axios.get('https://dev-api.konfhub.com/event/public/konfhub-frontend-evaluation-task');
-    console.log('response--', response.data);
     store.dispatch(setData(response.data));
     store.dispatch(setLoading(false))
     return response.data;

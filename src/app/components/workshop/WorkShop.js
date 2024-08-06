@@ -9,17 +9,17 @@ function WorkShop() {
   const loading = useSelector((state) => state.data.loading);
   
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalDetails, setModalDetails] = useState({});
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [modalDetails, setModalDetails] = useState({});
 
-  const handleButtonClick = (details) => {
-    setModalDetails(details);
-    setIsModalOpen(true);
-  };
+  // const handleButtonClick = (details) => {
+  //   setModalDetails(details);
+  //   setIsModalOpen(true);
+  // };
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
+  // const handleCloseModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;
@@ -36,7 +36,7 @@ function WorkShop() {
           date="Jun 11th, 2024 "
           time="at 10:00 AM (IST)"
           iconSrc="/batman-yellow.jpg"
-          onButtonClick={handleButtonClick}
+          // onButtonClick={handleButtonClick}
         />
         <CardComponent
           imageSrc="/batman-back.webp" 
@@ -44,7 +44,7 @@ function WorkShop() {
           date="Jun 11th, 2024 "
           time="at 10:00 AM (IST)"
           iconSrc="/blackman.jpg" 
-          onButtonClick={handleButtonClick}
+          // onButtonClick={handleButtonClick}
         />
         <CardComponent
           imageSrc="/tile.webp" 
@@ -53,10 +53,10 @@ function WorkShop() {
           time="at 10:00 AM (IST)"
           iconSrc="/batman-yellow.jpg"
           iconSrc2="/blackman.jpg"
-          onButtonClick={handleButtonClick}
+          // onButtonClick={handleButtonClick}
         />
       </div>
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal} details={modalDetails} />
+      {/* <Modal isOpen={isModalOpen} onClose={handleCloseModal} details={modalDetails} /> */}
     </div>
   );
 }

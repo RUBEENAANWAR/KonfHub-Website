@@ -39,7 +39,6 @@ const styles = {
     width:'100%',
     // height:'10%',
 display:'flex',
-backgroundColor:'red',
 gap:20,
 alignItems:'center'
   },

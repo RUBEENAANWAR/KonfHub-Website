@@ -28,9 +28,10 @@ body {
   }
 .secondPart{
 width:25%;
-position: 'fixed';
-right: '0';
-top:'0';
+position: sticky;
+right: 0;
+top:0;
+height: 110vh;
 }
 
 @media (max-width: 992px) {
